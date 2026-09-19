@@ -8,25 +8,38 @@
 <body>
     <h1>BEM-VINDO(A)</h1>
 
-    <img src="flor.jpg" alt="Imagem não encontrada"> 
+    <img height=380px src="foca.jpg" alt="foca"> 
 
     
     <div>
-        <button type="button" onclick=""> Digite seu nome e sobrenome </button>
+        <button type="button" onclick=""> Pergunte a foca </button>
     <input type="text" class="input1"> 
     <input type="text" class="input2">
     </div>
 <style>
     button {
-        background-color:antiquewhite;
+        background-color:rgb(165, 192, 218);
     }
     body {
-        background-color: lightpink;
+        background-color: rgb(44, 76, 136);
         text-align: center;
     }
     
+    
 </style>
+<script>
+    function nomeDaFuncao() { 
+       var escolha = Math.floor(Math.random() * 10); 
+       if (escolha%2){
+	alert("A foca escolheu "+document.querySelector(".input1").value)
+       }
+else {
+	alert("A foca escolheu "+document.querySelector(".input2").value)
+}
+    }
 
+</script>
+<button type="button" onclick="nomeDaFuncao()"> Perguntar </button>
 
 
     
